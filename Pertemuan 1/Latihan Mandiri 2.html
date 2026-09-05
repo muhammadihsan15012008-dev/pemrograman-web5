@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Profil</title>
+</head>
+<body>
+    <h1>Profil Saya<h1>
+    <p>Nama saya adalah Budi</p>
+    <ul>
+        <li>Programming
+        <li>Gaming
+        <li>Music
+
+    </ul>
+</body>
+</html>
+
+// Kesalahan 1 : sebelumnya tidak ada tag metadata wajib HTML 5,
+Tanpa ini, halaman web tidak responsif di hp dan karakter khusus bisa rusak
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+// Kesalahan 2: Tag Penutup Heading 1 (<h1>) Tidak ValidDetail Kesalahan: Pada baris <h1>Profil Saya<h1>,
+    menulis tag pembuka kembali di akhir teks, bukan tag penutup. Tag penutup wajib menggunakan garis miring (/).
+<h1>Profil saya</h1>
+
+//Kesalahan 3 : Tag List Item (<li>) Tidak Memiliki Penutup.Menurut standar W3C (World Wide Web Consortium),
+     tag <li> di dalam elemen <ul> (Unordered List) wajib ditutup dengan benar agar struktur pohon dokumen (DOM tree) terbentuk dengan sempurna.
+         Jika tidak ditutup, pemformatan gaya (CSS) pada elemen daftar bisa rusak atau meluber ke elemen berikutnya.
+<li>Programming</li>
+<li>Gaming</li>
+<li>Music</li>
+
+<h2>Program Yang Diperbaiki</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil saya</title>
+</head>
+<body>
+    <h1>Profil saya</h1>
+    <p>Nama saya adalah Budi</p>
+    <ul>
+        <li>Programming</li>
+        <li>Gaming</li>
+        <li>Music</li>
+    </ul>
+</body>
+</html>
